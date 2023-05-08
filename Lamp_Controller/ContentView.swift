@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var isDark: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Home()
+            .ignoresSafeArea()
+            .preferredColorScheme(isDark ? .dark : .light)
+        
     }
 }
 
