@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var isDark: Bool = false
+    @State var isDark: Bool = false
     var body: some View {
         Home()
             .ignoresSafeArea()
